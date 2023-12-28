@@ -1,28 +1,23 @@
-# SISTEMA JOGO DE XADREZ
+# SISTEMA TWITTER
 
 ## Sobre
 
-Este é um sistema de jogo de xadrez produzido em JAVA, atavés da IDE Eclipse.
-
-O projeto foi idealizado por [Nelio Alves.](https://github.com/acenelios)
+Este é um sistema que implementa funcionalidades do Twitter, através dos conceitos de programação orientada a objetos.
 
 O software é executado em terminal, e possui as seguintes funcionalidades:
 
-- Movimentos padrão das peças
-- Jogadas especiais: En Passant, Roque e Promoção
-- Contagem de turno
-- Peças capturadas
-- Lógica de xeque e xeque-mate
-- Tratamento de possíveis erros de entrada e desvios da regra
+- CRUD de conta, postagens publicas e mensagens privadas
+- Timeline
+- Lógica de follow e unfollow
+- Buscas, filtros e listagens de usuários e postagens
 
 ## Conteúdos Aplicados:
 
 ### Java
 
-- Lógica de programação (estrutura sequencial, condicional e repetitiva, vetores, matrizes, funções)
+- Lógica de programação (estrutura sequencial, condicional e repetitiva, vetores, funções)
 - Entrada e saída de dados
 - Tipos e tratamento de dados
-- Tratamento de exceções
 - Programação orientada a objetos
 
 ### Orientação a objetos
@@ -33,71 +28,78 @@ O software é executado em terminal, e possui as seguintes funcionalidades:
 - Encapsulamento
 - Membros estáticos
 - Sobrescrita
-- Enumerações
 - Composição de classes
 - Associação/dependência de classes
 - Classes abstratas
 - Herança
 - Polimorfismo
-- Upcasting
-- Downcasting
 
-### UML
+## Diagrama de Classes - UML
 
-Representações UML abordadas:
+O diagrama de classes apresenta de forma simplificada as classes, suas propriedades (atributos e métodos) e seus relacionamentos:
 
-- Classes: atributos e métodos
-- Encapsulamento: public, protected, private
-- Relacionamentos: herança, composição, associação
-
-## Diagrama de Classes
-
-O diagrama de classes apresenta de forma simplificada as classes, suas propriedades (atributos e métodos) e seus relacionamentos.
-
-Feito por [Nelio Alves.](https://github.com/acenelios)
-
-![DiagramaDeClasses](img/chess-system-design.png)
+![DiagramaDeClasses](img/diagrama%20UML%20twitter.png)
 
 ## Demonstração
 
-### Tabuleiro inicial
+### Perfil Criado
 
-Distribuição das peças no tabuleiro
+Visualização do perfil criado pelo usuário.
 
-![TabuleiroInicial](img/inicio.png)
+![PerfilCriado](img/perfilCriado.png)
 
-### Jogando
+### Menu Inicial
 
-Digita-se a posição da peça que será movida e em seguida a posição de destino da peça.
-O prórpio programa destaca os movimentos possíveis para aquela peça.
+O menu inicial oferece as principais opções do aplicativo.
 
-![Jogando](img/jogadas-possiveis.png)
+![MenuInicial](img/menuInicial.png)
 
-### Cheque
+### Menu Meu Perfil
 
-O jogo emite um alerta de cheque, e exige que a proxima jogada seja defensiva.
+O menu meu perfil oferece opções a cerca do perfil individual do usuário.
 
-![Cheque](img/cheque.png)
-![Exception](img/exception%20cheque.png)
+![MeuPerfil](img/menuMeuPerfil.png)
 
-### Cheque-mate
+### Menu Postagens Públicas
 
-Quando ocorre um cheque-mate o programa é encerrado.
-O vencedor e o tabuleiro final ficam impressos na tela.
+As postagens públicas do usuário são listadas e o menu com as opções é exibido.
 
-![ChequeMate](img/cheque%20mate.png)
+![PostagensPublicas](img/meuPostPublico.png)
 
-## Como jogar
+### Menu Postagens Diretas
+
+As postagens diretas enviadas e recebidas são listadas e o menu com as opções é exibido.
+
+![PostagensDiretas](img/menuPostagemDireta.png)
+
+### Perfis Usuários
+
+Visualização do perfil dos outros usuários da aplicação.
+
+![PefilUsuario](img/menuPerfil.png)
+
+### Timeline
+
+Listagem das postagens públicas dos usuários seguidos.
+
+![Timeline](img/timeline.png)
+
+### Buscar Usuários
+
+Painel de busca por usuários da plataforma.
+
+![BuscaUsuario](img/buscarUsuarios.png)
+
+## Como usar
 
 ### Requisitos
 
 - Ter uma versão recente do Java instalada (recomenda-se a LTS)
 - Ter o JDK instalado
-- Ter um terminal com cores instalado (sugestão: GIT Bash)
 
 ### Executando
 
 - Clone o repositório
 - Identifique a pasta com os arquivos executáveis do projeto
 - Abra essa pasta no terminal
-- Execute a classe Program do pacote application (java application/Program)
+- Execute a classe Main do pacote main (java main.Main)
